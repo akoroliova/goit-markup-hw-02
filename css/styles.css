@@ -13,49 +13,18 @@ ol {
   list-style-type: none;
 }
 
-/*
-TODO:
-- remove repeating inherited values (Roboto, navyblue text color, etc)
-- У тегів <img> вказані атрибути розмірів, як мінімум width.
-- прописуємо необхідні властивості (колір, властивості шрифта).
-- Пам’ятай, що рухаємось зліва направо і зверху вниз по макету.
-- Інтерактивні елементи (кнопки і посилання), при наведенні мишкою або фокусі з клавіатури, мають активний стан, вказаний в Style guide (зміна кольору).
-- Текст контактів в хедері змінює колір при ховері і фокусі.
-- Висота рядка (властивість line-height) всіх текстових елементів точно відповідає значенням з макета і задана як множник, а не в px.
-- font-weight всіх текстових елементів точно відповідає значенням з макета. Вага шрифту явно вказана тільки, якщо значення в макеті відрізняється від стандартного для цього елемента в браузері.
-- Кнопкам задана властивість cursor зі значенням pointer.
-- У стилях не повторюються значення властивостей, які задані браузером за замовчуванням. Наприклад, посиланням не потрібно вказувати cursor: pointer, а абзацам font-style: normal або font-weight: 400.
-*/
-
-.top-line {
-  display: flex;
-  width: 1440px;
-  height: 72px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
-}
-
 .header-logo {
-  display: inline-flex;
-  width: 71px;
-  height: 24px;
-  align-items: center;
-  flex-shrink: 0;
   color: var(--NAVY-BLUE, #2e2f42);
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
+  line-height: 1, 1667;
+  letter-spacing: 0, 03em;
   text-transform: uppercase;
 }
 
 .header-logo-accent {
   color: var(--IRIS, #4d5ae5);
-  width: 44px;
 }
 
 .menu-nav {
@@ -65,38 +34,29 @@ TODO:
 }
 
 .menu-links {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
 
 .contact-info {
   color: var(--SLATE, #434455);
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
 
 .hero {
-  width: 1440px;
-  height: 600px;
-  flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
 }
 
 .hero-header {
-  width: 496px;
   color: var(--WHITE, #fff);
   text-align: center;
-  font-family: Roboto;
   font-size: 56px;
-  font-weight: 700;
-  line-height: 60px; /* 107.143% */
-  letter-spacing: 1.12px;
+  line-height: 1, 07143;
+  letter-spacing: 0, 02em;
 }
 
 .hero-button {
@@ -108,21 +68,19 @@ TODO:
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--WHITE, #fff);
-  font-family: Roboto;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.64px;
+  line-height: 1, 5;
+  letter-spacing: 0, 04em;
+  cursor: pointer;
 }
 
 .advantages {
-  width: 1128px;
-  height: 104px;
   flex-shrink: 0;
 }
 .advantages-list {
   display: flex;
-  width: 264px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -130,58 +88,45 @@ TODO:
 
 .advantages-card {
   display: flex;
-  width: 264px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
 }
 
 .advantages-card-header {
-  width: 264px;
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+  line-height: 1, 2;
+  letter-spacing: 0, 02em;
 }
 
 .advantages-card-paragraph {
-  width: 264px;
   color: var(--SLATE, #434455);
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
 
 .team {
-  width: 1440px;
-  height: 732px;
   flex-shrink: 0;
   background: var(--CLOUD, #f4f4fd);
 }
 
 .team-header {
-  color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
+  line-height: 1, 111;
+  letter-spacing: 0, 02em;
   text-transform: capitalize;
 }
 
 .team-list {
   display: inline-flex;
-  padding-bottom: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
   border-radius: 0px 0px 4px 4px;
-  background: var(--WHITE, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -189,7 +134,6 @@ TODO:
 
 .team-card {
   display: flex;
-  width: 232px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -197,130 +141,89 @@ TODO:
 }
 
 .team-photo {
-  width: 264px;
-  height: 260px;
 }
 
 .team-card-header {
-  color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+  line-height: 1, 2;
+  letter-spacing: 0, 02em;
 }
 
 .team-card-paragraph {
   color: var(--SLATE, #434455);
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
 
 .portfolio {
-  width: 1128px;
-  height: 1000px;
   flex-shrink: 0;
 }
 
 .portfolio-header {
-  color: var(--NAVY-BLUE, #2e2f42);
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
+  line-height: 1.111;
+  letter-spacing: 0, 02em;
   text-transform: capitalize;
 }
 
 .portfolio-list {
-  width: 1128px;
-  height: 420px;
   flex-shrink: 0;
 }
 
 .portfolio-card {
   display: flex;
-  width: 360px;
-  height: 420px;
-  padding-bottom: 0px;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
   flex-shrink: 0;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
 }
 
 .portfolio-pic {
-  width: 360px;
-  height: 300px;
   flex-shrink: 0;
 }
 
 .portfolio-card-header {
-  color: var(--NAVY-BLUE, #2e2f42);
-  font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
+  line-height: 1, 2;
+  letter-spacing: 0, 02em;
 }
 
 .portfolio-card-paragraph {
   color: var(--SLATE, #434455);
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
 
 .footer {
-  width: 1440px;
-  height: 312px;
   flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
 }
 
-.footer-text {
-  width: 264px;
-  height: 112px;
-  flex-shrink: 0;
-}
-
 .footer-logo {
-  align-items: center;
-  flex-shrink: 0;
-  display: flex;
-  width: 71px;
-  height: 21px;
-  flex-direction: column;
-  justify-content: center;
   color: var(--CLOUD, #f4f4fd);
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 21px; /* 116.667% */
-  letter-spacing: 0.54px;
+  line-height: 1, 1667;
+  letter-spacing: 0, 03em;
   text-transform: uppercase;
 }
 
 .footer-logo-accent {
   color: var(--iris, #4d5ae5);
-  width: 44px;
 }
 
 .footer-paragraph {
-  width: 264px;
-  height: 112px;
-  flex-shrink: 0;
   color: var(--CLOUD, #f4f4fd);
-  font-family: Roboto;
   font-size: 16px;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
+  line-height: 1, 5;
+  letter-spacing: 0, 02em;
 }
