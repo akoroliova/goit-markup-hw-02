@@ -4,7 +4,8 @@ body {
   background-color: var(--white, #fff);
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -18,8 +19,8 @@ ol {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1, 1667;
-  letter-spacing: 0, 03em;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -27,24 +28,32 @@ ol {
   color: var(--IRIS, #4d5ae5);
 }
 
-.menu-nav {
-  display: inline-flex;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.menu-links {
+.menu-links a,
+.menu-links a:visited {
+  color: var(--NAVY-BLUE, #2e2f42);
   font-size: 16px;
   font-weight: 500;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
-.contact-info {
+.menu-links a:hover,
+.menu-links a:focus {
+  color: var(--OCEAN, #404bbf);
+}
+
+.contact-info a,
+.contact-info a:visited {
   color: var(--SLATE, #434455);
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  color: var(--OCEAN, #404bbf);
 }
 
 .hero {
@@ -55,15 +64,11 @@ ol {
   color: var(--WHITE, #fff);
   text-align: center;
   font-size: 56px;
-  line-height: 1, 07143;
-  letter-spacing: 0, 02em;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
 }
 
 .hero-button {
-  display: inline-flex;
-  padding: 16px 32px;
-  align-items: flex-start;
-  gap: 10px;
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -71,139 +76,81 @@ ol {
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1, 5;
-  letter-spacing: 0, 04em;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 
-.advantages {
-  flex-shrink: 0;
-}
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.advantages-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--OCEAN, #404bbf);
 }
 
 .advantages-card-header {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1, 2;
-  letter-spacing: 0, 02em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .advantages-card-paragraph {
   color: var(--SLATE, #434455);
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .team {
-  flex-shrink: 0;
   background: var(--CLOUD, #f4f4fd);
 }
 
 .team-header {
   text-align: center;
   font-size: 36px;
-  line-height: 1, 111;
-  letter-spacing: 0, 02em;
+  line-height: 1.111;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
-}
-
-.team-list {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.team-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.team-photo {
 }
 
 .team-card-header {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
-  line-height: 1, 2;
-  letter-spacing: 0, 02em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .team-card-paragraph {
   color: var(--SLATE, #434455);
   text-align: center;
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
-}
-
-.portfolio {
-  flex-shrink: 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-header {
   text-align: center;
   font-size: 36px;
   line-height: 1.111;
-  letter-spacing: 0, 02em;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
-}
-
-.portfolio-list {
-  flex-shrink: 0;
-}
-
-.portfolio-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  flex-shrink: 0;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-}
-
-.portfolio-pic {
-  flex-shrink: 0;
 }
 
 .portfolio-card-header {
   font-size: 20px;
   font-weight: 500;
-  line-height: 1, 2;
-  letter-spacing: 0, 02em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
 .portfolio-card-paragraph {
   color: var(--SLATE, #434455);
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer {
-  flex-shrink: 0;
   background: var(--NAVY-BLUE, #2e2f42);
 }
 
@@ -212,8 +159,8 @@ ol {
   font-family: Raleway;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1, 1667;
-  letter-spacing: 0, 03em;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -224,6 +171,6 @@ ol {
 .footer-paragraph {
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
-  line-height: 1, 5;
-  letter-spacing: 0, 02em;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
