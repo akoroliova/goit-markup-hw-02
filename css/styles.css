@@ -46,17 +46,20 @@ ol {
   color: var(--OCEAN, #404bbf);
 }
 
-.contact-info a,
-.contact-info a:visited {
+.contact-info {
+  font-style: normal;
+}
+
+.contact-link,
+.contact-link:visited {
   color: var(--SLATE, #434455);
   font-size: 16px;
-  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.contact-info a:hover,
-.contact-info a:focus {
+.contact-link:hover,
+.contact-link:focus {
   color: var(--OCEAN, #404bbf);
 }
 
