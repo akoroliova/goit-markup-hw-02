@@ -66,7 +66,6 @@ ol {
 
 .hero-header {
   color: var(--WHITE, #fff);
-  text-align: center;
   font-size: 56px;
   line-height: 1.07143;
   letter-spacing: 0.02em;
@@ -122,7 +121,6 @@ ol {
 }
 
 .team-header {
-  text-align: center;
   font-size: 36px;
   line-height: 1.111;
   letter-spacing: 0.02em;
@@ -130,7 +128,6 @@ ol {
 }
 
 .team-card-header {
-  text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -139,14 +136,12 @@ ol {
 
 .team-card-paragraph {
   color: var(--SLATE, #434455);
-  text-align: center;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 .portfolio-header {
-  text-align: center;
   font-size: 36px;
   line-height: 1.111;
   letter-spacing: 0.02em;
