@@ -1,6 +1,6 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
-  color: var(--navyblue, #2e2f42);
+  font-family: "Roboto", sans-serif;
+  color: #434455;
   background-color: var(--white, #fff);
 }
 
@@ -16,10 +16,10 @@ ol {
 
 .logo {
   color: var(--IRIS, #4d5ae5);
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.1667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -67,16 +67,15 @@ ol {
 .hero-header {
   color: var(--WHITE, #fff);
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .hero-button {
-  border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--WHITE, #fff);
-  font-family: inherit;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -87,19 +86,6 @@ ol {
 .hero-button:hover,
 .hero-button:focus {
   background: var(--OCEAN, #404bbf);
-}
-
-.visually-hidden-advantages-header {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .advantages-card-header {
@@ -122,7 +108,7 @@ ol {
 
 .team-header {
   font-size: 36px;
-  line-height: 1.111;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
@@ -139,12 +125,14 @@ ol {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .portfolio-header {
   font-size: 36px;
-  line-height: 1.111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   text-transform: capitalize;
 }
 
